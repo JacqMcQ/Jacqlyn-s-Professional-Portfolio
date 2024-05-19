@@ -5,6 +5,7 @@
 
 }
 body {
+    margin: 20px;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #aa3ac0;
@@ -15,6 +16,7 @@ header {
     color: #aa3ac0;
     text-align: center;
     padding: 20px 0;
+    font-size: 45px;
 }
 
 header img {
@@ -43,9 +45,25 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     transition: color 0.3s ease;
+    font-size: 35px;
 }
 
 nav ul li a:hover {
     color: #f7de04;
+}
+
+@media (max-width: 768px) {
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
 }
 
