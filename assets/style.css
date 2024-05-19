@@ -1,6 +1,7 @@
 :root{
 --myyellow: #f7de04;
 --mypink: #aa3ac0;
+--dark: #333;
 }
 * {
     margin: 0;
@@ -11,7 +12,6 @@
 body {
     display: flex;
     flex-direction: column;
-    margin: 20px;
     font-family: Arial, sans-serif;
     font-size: large;
     line-height: 1.6;
@@ -29,12 +29,14 @@ header {
 header img {
     border-radius: 50%;
     border-color: black;
+    margin-left: 20px;
     width: 150px;
     height: 150px;
 }
 
 header h1 {
     margin-top: 10px;
+    margin-left: 20px
 
 }
 
@@ -42,6 +44,7 @@ nav ul {
     list-style-type: none;
     text-align: center;
     padding: 10px 0;
+    margin-left: 20px;
     display: flex; 
     justify-content: center; 
 }
@@ -53,8 +56,9 @@ nav ul li {
 nav ul li a {
     display: flex;
     justify-content: space-around;
+    margin-left: 20px;
     text-decoration: none;
-    color: #333;
+    color: var(--dark);
     transition: color 0.3s ease;
     font-size: 35px;
 }
@@ -62,11 +66,24 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--myyellow);
 }
+
+#about {  
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+}
+
 #work {
     display: flex; 
     flex-direction: column;
     align-items: flex-start; 
     margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 20px;
     border:2px solid var(--myyellow);
 }
@@ -80,13 +97,18 @@ nav ul li a:hover {
 #work li {
     margin:20px 0 20px 0;
     text-align: left;
+    position: relative;
+    perspective: 1000px;
   
 }
 
-#work li a {
+#work li a:hover img {
+    transform: rotateY(20deg);
+    transform: rotateZ('45deg');
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     display: inline-block;
     text-decoration: none;
-    color: #333;
+    color: var(--dark);
     
 }
 
@@ -99,6 +121,8 @@ nav ul li a:hover {
 
 #contact {
  margin-top: 30px;
+ margin-left: 20px;
+ margin-right: 20px;
  border-bottom: 2px solid var(--myyellow);  
 }
 
