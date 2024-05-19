@@ -1,3 +1,7 @@
+:root{
+--myyellow: #f7de04;
+--mypink: #aa3ac0;
+}
 * {
     margin: 0;
     padding: 0;
@@ -11,15 +15,15 @@ body {
     font-family: Arial, sans-serif;
     font-size: large;
     line-height: 1.6;
-    background-color: #aa3ac0;
+    background-color: var(--mypink);
 }
 header {
     background-color: #333;
-    color: #aa3ac0;
+    color: var(--mypink);
     text-align: center;
     padding: 20px 0;
     font-size: 60px;
-    border-bottom: 2px solid #f7de04;
+    border-bottom: 2px solid var(--myyellow);
 }
 
 header img {
@@ -40,7 +44,6 @@ nav ul {
     padding: 10px 0;
     display: flex; 
     justify-content: center; 
-    border-bottom: 2px solid #f7de04;
 }
 
 nav ul li {
@@ -57,7 +60,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f7de04;
+    color: var(--myyellow);
 }
 #work {
     display: flex; 
@@ -65,8 +68,7 @@ nav ul li a:hover {
     align-items: flex-start; 
     margin-top: 10px;
     padding: 20px;
-    border:2px solid #f7de04;
-    border-radius: 10%;
+    border:2px solid var(--myyellow);
 }
 
 #work ul {
@@ -97,8 +99,13 @@ nav ul li a:hover {
 
 #contact {
  margin-top: 30px;
- margin-bottom: 30px;
- border-bottom: 5px solid #f7de04;  
+ border-bottom: 2px solid var(--myyellow);  
+}
+
+#footer{
+    margin-top: 20px;
+    text-align: center;
+    font-size: small;
 }
 
 @media (max-width: 768px) {
