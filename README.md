@@ -6,7 +6,7 @@ This is Jacqlyn McQuade's professional portfolio website, showcasing her work an
 
 ![alt text](<photos/Untitled_ May 21, 2024 3_12 PM.gif>)
 ## About: 
-This page was creatred using html.index file and styled linking to a style.css file that contains the layout and design information. The page offers ease of navigation by clicking on the sections the page will scroll to the corresponding section on the page. 
+This page can be viewed by visiting: https://jacqmcq.github.io/Jacqlyn-s-Professional-Portfolio/. Please note that there is a navigation menu at the top of the page below the profile picture, that when clicked will scroll the UI to the corresponding section of the page. The images linked for the projects, include hover featured to make the image appear larger when scrolling over. When clicked, you will be redirected to the corresponding repository. 
 
 ## My Work:
 
